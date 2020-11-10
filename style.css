@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins' , sans-serif;
+}
+p{
+    font-size:0.9rem;
+    line-height:1.6;
+    font-weight: 400;
+    color:#606060;
+}
+.header{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)),url('https://images.unsplash.com/photo-1472289065668-ce650ac443d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position:relative;
+    clip-path: polygon(100% 0%, 100% 75%, 50% 100%, 0% 75%, 0% 0%);
+    background-attachment: fixed;
+}
+.header:before{
+    content: "";
+    position:absolute;
+    top:0%;
+    bottom:0%;
+    left:0%;
+    right:0%;
+    opacity:0.2;
+    z-index:-1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #000 100%);
+}
+.nav-item a{
+    color:#fff !important;
+    font-weight:bold;
+}
+.navbar-brand{
+    color:#fff !important;
+    animation: music 1s linear infinite;
+     animation-direction: alternate;
+}
+     .navbar-brand .fas{
+        font-size: 4rem;
+    }
+
+    @keyframes music{
+        from{
+            transform: rotate(5deg);
+        }to{
+         transform: rotate(-5deg);
+        }
+    }
+    .navbar-brand:hover{
+         filter:drop-shadow(0 1.5rem 1rem rgba(255,255,255,0.5));
+    }
+
+.header-section{
+    width:100%;
+    height:inherit;
+    color:white;
+    text-align:center;
+    position:relative;
+}
+.center-div{
+    width:100%;
+    height:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+.header .navbar-brand:hover{
+   
+    color:#fff;
+}
+                /* AboutUs & Contact Buttons */
+.header-buttons a{
+    border:1px solid #fff;
+    border-radius:100px;
+    margin:0 5px;
+    padding:12px 35px;
+    outline:none;
+    color:#fff;
+    font-size:1rem;
+    font-weight:400;
+    line-height: 1.4;
+    text-align:center;
+}
+.header-buttons a:hover{
+    color:#50d1c0;
+    background:#fff;
+    text-decoration:none;
+    box-shadow:0 0 20px 0 rgba(0,0,0,0.3);
+}
+.center-div p{
+    font-size: 1.3rem;
+    padding:10px 0 20px 0;
+    /* color:#000; */
+    color:#fff;
+    text-transform: uppercase;
+}
+/* .center-div p:hover{
+    color:#fff;
+    filter:drop-shadow(0 1.5rem 1rem rgba(255,255,255,0.5));
+} */
+.hel{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.circular_image img{
+    border-radius:50%;
+}
+.name_style{
+    font-family: 'Syne Mono', monospace;
+}
+.header-extradiv{
+    width:100%;
+    height:100%;
+    margin:100px 0;
+    text-align:center;
+}
+.extra-div{
+    background:#fff;
+    border:medium none;
+    padding:50px;
+    border-radius:3px;
+    transition:0.3s;
+}
+.extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform:translateY(-20px);
+}
+
+.extra-div h2, .servicediv h2{
+    font-size: 0.9rem;
+    margin:20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing:4px;
+    text-transform: uppercase;
+}
+.pro i{
+    color:#2fccd0;
+}
+.skills{
+    background: #f7f7f9;
+    padding:50px 0;
+    margin-bottom: 50px;
+}
+.names h1{
+    color:#2e2e2e;
+    font-size:0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* .intern{
+  position: sticky;
+} */
+
+  /* LETS TALK */
+
+  .contactus{
+    width:100%;
+    height:100vh;
+     padding:80px 0;     /*height thora kam karne ka liya */
+     position:relative;
+}
+.contactus:before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: linear-gradient(330deg, #ffccb3 55%, #fff 0%);
+    z-index:-1;   /* contact us content or paragraph ka picha background lage uske liya */
+}
+.form-button button{
+    border:1px solid #000;
+    border-radius:100px;
+    margin:0 5px;
+    padding:12px 35px;
+    outline:none;
+    color:#fff !important;
+    font-size:1rem;
+    font-weight:400;
+    line-height: 1.4;
+    text-align:center;
+    background: transparent;
+}
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0 !important;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+/* .form-button button:hover{
+    color:#50d1c0 !important;
+} */
+
+::placeholdes{
+        font-size:0.85rem;
+}
+
